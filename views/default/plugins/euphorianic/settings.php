@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Project Name:            Euphoria Theme
  * Project Description:     Theme for Elgg 1.8
@@ -35,6 +34,17 @@ $slide4 = $vars['entity']->slide4;
 if (!$slide4) {
     $slide4 = elgg_get_site_url() . "mod/euphorianic/graphics/slide4.png";
 }
+$videos = $vars['entity']->videos;
+if (!$videos) { $videos = 'no'; }		
+$fotos = $vars['entity']->fotos;
+if (!$fotos) { $fotos = 'no'; }		
+$blogs = $vars['entity']->blogs;
+if (!$blogs) { $blogs = 'no'; }		
+$bookmarks = $vars['entity']->bookmarks;
+if (!$bookmarks) { $bookmarks = 'no'; }		
+$newsletter = $vars['entity']->newsletter;
+if (!$newsletter) { $newsletter = 'no'; }		
+
 echo "<label>Home text</label><br/>";
 echo elgg_view("input/longtext", array(
     "name" => "params[hometext]",
@@ -77,4 +87,61 @@ echo elgg_view("input/text", array(
     "value" => $slide4
 ));
 echo "<br/>";
+echo "<br/>";
+echo "<label>" . elgg_echo('euphorianic:menu:select') . "</label><br/>";
+echo "<div>";
+	echo elgg_echo('euphorianic:blogs') . ' ';
+	echo elgg_view('input/dropdown', array(
+		'name' => 'params[blogs]',
+		'options_values' => array(
+			'no' => elgg_echo('euphorianic:menu:no'),
+			'yes' => elgg_echo('euphorianic:menu:yes'),
+		),
+		'value' => $blogs,
+	));
+echo "</div>";
+echo "<div>";
+	echo elgg_echo('euphorianic:videos') . ' ';
+	echo elgg_view('input/dropdown', array(
+		'name' => 'params[videos]',
+		'options_values' => array(
+			'no' => elgg_echo('euphorianic:menu:no'),
+			'yes' => elgg_echo('euphorianic:menu:yes'),
+		),
+		'value' => $videos,
+	));
+echo "</div>";
+echo "<div>";
+	echo elgg_echo('euphorianic:fotos') . ' ';
+	echo elgg_view('input/dropdown', array(
+		'name' => 'params[fotos]',
+		'options_values' => array(
+			'no' => elgg_echo('euphorianic:menu:no'),
+			'yes' => elgg_echo('euphorianic:menu:yes'),
+		),
+		'value' => $fotos,
+	));
+echo "</div>";
+echo "<div>";
+	echo elgg_echo('euphorianic:bookmarks') . ' ';
+	echo elgg_view('input/dropdown', array(
+		'name' => 'params[bookmarks]',
+		'options_values' => array(
+			'no' => elgg_echo('euphorianic:menu:no'),
+			'yes' => elgg_echo('euphorianic:menu:yes'),
+		),
+		'value' => $bookmarks,
+	));
+echo "</div>";
+echo "<div>";
+	echo elgg_echo('euphorianic:newsletter') . ' ';
+	echo elgg_view('input/dropdown', array(
+		'name' => 'params[newsletter]',
+		'options_values' => array(
+			'no' => elgg_echo('euphorianic:menu:no'),
+			'yes' => elgg_echo('euphorianic:menu:yes'),
+		),
+		'value' => $newsletter,
+	));
+echo "</div>";
 ?>
