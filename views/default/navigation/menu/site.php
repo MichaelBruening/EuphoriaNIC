@@ -22,7 +22,7 @@ foreach ($default_items as $menu_item) {
     echo elgg_view('navigation/menu/elements/item', array('item' => $menu_item));
 }
 if ($blogs == 'yes') {
- echo "<li><a href='" . elgg_get_site_url() . "photos/siteimagesall" . "'>" . elgg_echo('euphorianic:blogs') . "</a></li>";
+ echo "<li><a href='" . elgg_get_site_url() . "blog/all" . "'>" . elgg_echo('euphorianic:blogs') . "</a></li>";
 }
 if ($fotos == 'yes') {
  echo "<li><a href='" . elgg_get_site_url() . "photos/siteimagesall" . "'>" . elgg_echo('euphorianic:fotos') . "</a></li>";
