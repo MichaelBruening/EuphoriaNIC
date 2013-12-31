@@ -16,8 +16,14 @@ $english = array(
 	'euphorianic:logout' => "Logout",
 
 	'euphorianic:bookmarks' => "Bookmarks",
-	'euphorianic:fotos' => "Fotos",
+	'euphorianic:blogs' => "Blogs",
+	'euphorianic:photos' => "Photos",
 	'euphorianic:videos' => "Videos",
+	'euphorianic:newsletter' => "Newsletter",
+
+	'euphorianic:menu:select' => "Select plugins to incorporate into Site-menu",
+	'euphorianic:menu:yes' => "Yes",
+	'euphorianic:menu:no' => "No",
 );
 
 add_translation("en", $english);

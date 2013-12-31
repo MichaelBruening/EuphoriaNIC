@@ -16,8 +16,14 @@ $spanish = array(
 	'euphorianic:logout' => "Cerrar sesión",
 
 	'euphorianic:bookmarks' => "Favoritos",
-	'euphorianic:fotos' => "Fotos",
+	'euphorianic:blogs' => "Blogs",
+	'euphorianic:photos' => "Fotos",
 	'euphorianic:videos' => "Videos",
+	'euphorianic:newsletter' => "Circulares",
+
+	'euphorianic:menu:select' => "Elegir plugins para incorporarlos en el menu del sitio",
+	'euphorianic:menu:yes' => "Si",
+	'euphorianic:menu:no' => "No",
 );
 
 add_translation("es", $spanish);

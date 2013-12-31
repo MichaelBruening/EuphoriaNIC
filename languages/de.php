@@ -16,8 +16,14 @@ $german = array(
 	'euphorianic:logout' => "Logout",
 
 	'euphorianic:bookmarks' => "Favoriten",
-	'euphorianic:fotos' => "Fotos",
+	'euphorianic:photos' => "Fotos",
+	'euphorianic:blogs' => "Blogs",
 	'euphorianic:videos' => "Videos",
+	'euphorianic:newsletter' => "Newsletter",
+
+	'euphorianic:menu:select' => "Plugins wählen zur Aufnahme ins Seiten-Menü",
+	'euphorianic:menu:yes' => "Ja",
+	'euphorianic:menu:no' => "Nein",
 );
 
 add_translation("de", $german);

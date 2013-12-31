@@ -36,8 +36,8 @@ if (!$slide4) {
 }
 $videos = $vars['entity']->videos;
 if (!$videos) { $videos = 'no'; }		
-$fotos = $vars['entity']->fotos;
-if (!$fotos) { $fotos = 'no'; }		
+$photos = $vars['entity']->photos;
+if (!$photos) { $photos = 'no'; }		
 $blogs = $vars['entity']->blogs;
 if (!$blogs) { $blogs = 'no'; }		
 $bookmarks = $vars['entity']->bookmarks;
@@ -112,14 +112,14 @@ echo "<div>";
 	));
 echo "</div>";
 echo "<div>";
-	echo elgg_echo('euphorianic:fotos') . ' ';
+	echo elgg_echo('euphorianic:photos') . ' ';
 	echo elgg_view('input/dropdown', array(
-		'name' => 'params[fotos]',
+		'name' => 'params[photos]',
 		'options_values' => array(
 			'no' => elgg_echo('euphorianic:menu:no'),
 			'yes' => elgg_echo('euphorianic:menu:yes'),
 		),
-		'value' => $fotos,
+		'value' => $photos,
 	));
 echo "</div>";
 echo "<div>";

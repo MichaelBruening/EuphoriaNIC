@@ -1,0 +1,23 @@
+V1.1
+- added language file for german/DE
+- plugins to be shown in the menu can now be set via Configuration->Settings->EuphoriaNIC
+  plugins available for selection are: Blogs, Videos, Fotos, Bookmarks and Newsletter
+  files to modify if you want another set of plugins:
+  - views/default/plugins/euphorianic/settings.php
+  - views/default/navigation/menu/site.php
+  - and the language files
+
+Known issues
+Edit: i just noticed a copy&paste error on line 25 of "views/default/navigation/menu/site.php", which links the blogs menu entry to the fotos-plugin. Please replace "photos/siteimagesall" with "blog/all".
+
+Fixed in the GitHub repository, will be incorporated into next release, if any (nothing planned at the moment).
+
+In a perfect world, the list of plugins available for incorporation into the menu would be constructed dynamically from the set of plugins installed/activated..
+
+V1.2
+- disabled plugins are no longer added to the menu
+- renamed "fotos" to "photos" to have it consistent with tidypics naming
+- fixed a copy&paste error introduced with V1.1
+
+Known Issues
+There are several video plugins available. Because i use "frontpage_campaign" which contains the "videolist"-plugin code, the active/enabled check is done using the frontpage plugin id. So if you use another video plugin, adjust the check in "views/default/navigation/menu/site.php", line 35.
